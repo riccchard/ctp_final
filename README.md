@@ -15,20 +15,22 @@ MCRM will change a camera filter randomly among checked filters. This occurs wit
 
 How to play
 -----------
-#### 1. Drop your music ####
-Choose audio file from your local library.
+#### 1. Drop your music or video ####
+Choose audio, video file from your local library.
 
-#### 2. Find BPM ####
-Click 'Find BPM' button to obtain bpm of your music.
-
-#### 3. Adjust count number ####
-You can adjust a count number.
+#### 2. Adjust count number ####
+You can adjust a count number and blur effect threshold.
 
 Pleas click 'Count Change' button after modify.
+
+#### 3. Choose filters ####
+You can choose filters. MCRM randomly select a effect among your choices.
+
 
 #### 4. Play ####
 Click 'Audio Play' button to start Music-Cam React Machine.
 
+[PLAY](https://riccchard.github.io/ctp_final/)
 
 References
 ----------
