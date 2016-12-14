@@ -123,6 +123,7 @@ function findBPM(){
 
 function count_change(){
   clearInterval(random_interval)
+  draw_camera('clear','1screen')
   count_value = document.getElementById('count').value;
   f=1;
 }

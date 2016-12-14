@@ -39,7 +39,7 @@
 	<p>
 		Adjust count number
 		<input type="text" id="count" value="8">
-		<button id="count_change">Count change</button>
+		<button id="count_change">Count reset</button>
 	</p>
 	<p>
 		Blur effect threshold<input id="blur_effect_threshold" type="range" min="-35" max="-15" value="-25" />
@@ -63,61 +63,45 @@
 			</th>
 
 			<th align="left">
-			<input id="uncheck_all" type="checkbox" onclick="check_all_toggle(this.checked)"></input>
-			<label>All Filters</label>
+			<label><input id="uncheck_all" type="checkbox" onclick="check_all_toggle(this.checked)"> All Filters</label>
+			
 			<br>
-			<input name="check" id="clear" type="checkbox" onchange="filter_add('clear')"></input>
-			<label>Clear</label>
+			<label><input name="check" id="clear" type="checkbox" onchange="filter_add('clear')"> Clear</label>
 			<br>
-			<input name="check" id="brightness" type="checkbox" onchange="filter_add('brightness')"></input>
-			<label>Brightness</label>
+			<label><input name="check" id="brightness" type="checkbox" onchange="filter_add('brightness')"> Brightness</label>
 			<br>
-			<input name="check" id="contrast" type="checkbox" onchange="filter_add('contrast')"></input>
-			<label>Contrast</label>
+			<label><input name="check" id="contrast" type="checkbox" onchange="filter_add('contrast')"> Contrast</label>
 			<br>
-			<input name="check" id="sepia" type="checkbox" onchange="filter_add('sepia')"></input>
-			<label>Sepia</label>
+			<label><input name="check" id="sepia" type="checkbox" onchange="filter_add('sepia')"> Sepia</label>
 			<br>
-			<input name="check" id="sharpen" type="checkbox" onchange="filter_add('sharpen')"></input>
-			<label>Sharpen</label>
+			<label><input name="check" id="sharpen" type="checkbox" onchange="filter_add('sharpen')"> Sharpen</label>
 			<br>
 			<br>
-			<input name="check" id="invert" type="checkbox" onchange="filter_add('invert')"></input>
-			<label>Invert</label>
+			<label><input name="check" id="invert" type="checkbox" onchange="filter_add('invert')"> Invert</label>
 			<br>
-			<input name="check" id="saturate" type="checkbox" onchange="filter_add('saturate')"></input>
-			<label>Saturate</label>
+			<label><input name="check" id="saturate" type="checkbox" onchange="filter_add('saturate')"> Saturate</label>
 			<br>
-			<input name="check" id="sobel" type="checkbox" onchange="filter_add('sobel')"></input>
-			<label>Sobel</label>
+			<label><input name="check" id="sobel" type="checkbox" onchange="filter_add('sobel')"> Sobel</label>
 			<br>
 			<br>
-			<input name="check" id="gray" type="checkbox" onchange="filter_add('gray')"></input>
-			<label>Gray</label>
+			<label><input name="check" id="gray" type="checkbox" onchange="filter_add('gray')"> Gray</label>
 			<br>
-			<input name="check" id="threshold" type="checkbox" onchange="filter_add('threshold')"></input>
-			<label>Threshold</label>
+			<label><input name="check" id="threshold" type="checkbox" onchange="filter_add('threshold')"> Threshold</label>
 			<br>
-			<input name="check" id="embossed" type="checkbox" onchange="filter_add('embossed')"></input>
-			<label>Embossed</label>
+			<label><input name="check" id="embossed" type="checkbox" onchange="filter_add('embossed')"> Embossed</label>
 			<br>
 			<br>
-			<input name="check" id="freeze" type="checkbox" onchange="filter_add('freeze')"></input>
-			<label>Freeze</label>
+			<label><input name="check" id="freeze" type="checkbox" onchange="filter_add('freeze')"> Freeze</label>
 			</th>
 
 			<th align="left">
-			<input id="uncheck_all_2" type="checkbox" onclick="check_all_toggle2(this.checked)"></input>
-			<label>All Screen numbers</label>
+			<label><input id="uncheck_all_2" type="checkbox" onclick="check_all_toggle2(this.checked)"> All Screen numbers</label>
 			<br>
-			<input name="check2" id="1screen" type="checkbox" onchange="screen_num_add('1screen')"></input>
-			<label>1 Screen</label>
+			<label><input name="check2" id="1screen" type="checkbox" onchange="screen_num_add('1screen')"> 1 Screen</label>
 			<br>
-			<input name="check2" id="2screen" type="checkbox" onchange="screen_num_add('2screen')"></input>
-			<label>2 Screen</label>		
+			<label><input name="check2" id="2screen" type="checkbox" onchange="screen_num_add('2screen')"> 2 Screen</label>		
 			<br>
-			<input name="check2" id="4screen" type="checkbox" onchange="screen_num_add('4screen')"></input>
-			<label>4 Screen</label>
+			<label><input name="check2" id="4screen" type="checkbox" onchange="screen_num_add('4screen')"> 4 Screen</label>
 			</th>
 		</tr>
 	</table>

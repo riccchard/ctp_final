@@ -148,13 +148,14 @@ function fileChanged(e){
 		console.log("Video has been loaded")
 		var fileURL = URL.createObjectURL(file)
 		camera.src = fileURL;
+		draw_camera('clear','1screen')
 	}
 	else{
 		camera = document.getElementById("videoElement");
 		videoCanvas.height = 360;
 		back_videoCanvas.height = 360;
 		back.height = 360;
-		ch = 360;		
+		ch = 360;
 	}
 	var fileReader = new FileReader();
 	fileReader.onload = fileLoaded;
@@ -266,7 +267,6 @@ function music_start() {
 			gScale_env = 0;
 		}
 		else if (gScale_env>10){
-			console.log(gScale_env)
 			gScale_env=10;
 		}
 	}
