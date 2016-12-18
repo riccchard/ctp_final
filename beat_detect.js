@@ -122,8 +122,14 @@ function findBPM(){
 }
 
 function count_change(){
-  clearInterval(random_interval)
-  draw_camera('clear','1screen')
-  count_value = document.getElementById('count').value;
-  f=1;
+  var c = document.getElementById('count').value;
+  if ((Number(c)==Math.floor(c)) && (c > 0)){
+    clearInterval(random_interval)
+    draw_camera('clear','1screen')
+    count_value = document.getElementById('count').value;
+    f=1;
+  }
+  else{
+    alert("count number should be positive integer")
+  }
 }

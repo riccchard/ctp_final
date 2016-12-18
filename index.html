@@ -12,6 +12,13 @@
 	<script type="text/javascript" src="./draw_camera.js"></script>
 </head>
 <style>
+	table{
+		border-collapse: collapse;
+	}
+	th{
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+	}
 	#videoElement{
 		display:none;
 	}
@@ -26,31 +33,59 @@
 	#bpm_output{
 		font-weight: bold;
 	}
+	[name='p_no_margin']{
+		margin-top:0;
+		margin-bottom:0;
+	}
+	#count{
+		width:30px;
+	}
 </style>
-<body>		
-	<h1> CTP Final 20130115: Music-Cam React Machine </h1>
-
-	<p>
-		<input id="fileChooseInput" type="file" accept="audio/*,video/*"></input>
-	</p>
-	<p>
-		<label id="bpm_output">Drop your music or video</label>
-	</p>
-	<p>
-		Adjust count number
-		<input type="text" id="count" value="8">
-		<button id="count_change">Count reset</button>
-	</p>
-	<p>
-		Blur effect threshold<input id="blur_effect_threshold" type="range" min="-35" max="-15" value="-25" />
-			<span id="blur_value"></span>
-	</p>
-	<p>
-		<button id="demoAudio"> Play </button>
-	</p>
-
-	<table>
+<body>
+	<div align="center">
+		<h1> CTP Final 20130115: Music-Cam React Machine </h1>
+	</div>
+	<br>
+	<table align="center">
+		<col width="250">
+		<col width="250">
 		<tr>
+			<td align="center">
+			<label id="bpm_output">Drop your music or video</label>
+			</td>
+			<td align="center">
+			<p name = 'p_no_margin'><b> Count Number </b></p>
+			</td>
+			<td align="center">
+			<p name = 'p_no_margin'><b> Kick Threshold </b></p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+			<input id="fileChooseInput" type="file" accept="audio/*,video/*"></input>
+			</td>
+			<td align="center">
+			<input type="number" id="count" value="8">
+			<button id="count_change">Count Reset</button>			
+			</td>
+			<td align="center">
+			<input id="blur_effect_threshold" type="range" min="-35" max="-15" value="-25" />
+			</td>
+			<td align="left">
+			<span id="blur_value"></span>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table align="center">
+		<tr align = "center">
+			<td>
+			</td>
+			<td>
+			<button id="demoAudio"> Play </button>
+			</td>
+		</tr>
+		<tr align="center">
 			<th width="480px">
 			<canvas id='loudnessView'"></canvas>
 			</th>
