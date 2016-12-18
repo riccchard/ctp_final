@@ -5,7 +5,7 @@ function draw_visualizer(){
 	// fill rectangular (for the entire canvas)
 	//drawContext.fillStyle = 'rgb(0,0,0)';
 	//drawContext.fillRect(0,0,WIDTH,HEIGHT)
-	drawContext.clearRect(0, 0, WIDTH,HEIGHT);
+	drawContext.clearRect(2, 2, WIDTH-4,HEIGHT-4);
 
 	drawContext.font = '12pt Calibri';
 	drawContext.fillStyle = 'black';

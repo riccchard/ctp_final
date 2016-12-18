@@ -28,7 +28,7 @@ for (var i=0; i <num; i++ ) {
 	prev_r[i] = 0;
 }
 var R=WIDTH/3;
-var maxdB = 20; //max dB for peaking filter
+var maxdB = 30; //max dB for peaking filter
 var k=0; // mouse up
 
 // camera
