@@ -274,6 +274,7 @@ function music_start() {
 	}
 	pre = data_array[4];
 	document.getElementById("videoCanvas").style.filter="blur(" + gScale_env +"px) saturate(" + saturate +") invert(" + invert +"%) sepia(" + sepia + "%) contrast(" + contrast +"%) grayscale(" + gray_value + "%) brightness(" + brightness + "%)";
+	document.getElementById("videoCanvas").style.WebkitFilter="blur(" + gScale_env +"px) saturate(" + saturate +") invert(" + invert +"%) sepia(" + sepia + "%) contrast(" + contrast +"%) grayscale(" + gray_value + "%) brightness(" + brightness + "%)";	
 	draw_visualizer()
 }
 

@@ -49,9 +49,6 @@ function draw_camera(camera_filter,screen_num){
 			document.getElementById("videoCanvas").style.filter='none';
 			draw_interval = setInterval(clear,22);
 			break;
-		//case 'gray':
-		//	draw_interval = setInterval(gray,22);
-		//	break;
 		case 'threshold':
 			draw_interval = setInterval(threshold,22);
 			break;
