@@ -51,6 +51,8 @@ var screen_interval;
 var invert=0;
 var sepia=0;
 var contrast=100;
+var gray_value=0;
+var brightness=100;
 
 var back = document.createElement('canvas');
 var backContext = back.getContext('2d');
@@ -271,7 +273,7 @@ function music_start() {
 		}
 	}
 	pre = data_array[4];
-	document.getElementById("videoCanvas").style.filter="blur(" + gScale_env +"px) saturate(" + saturate +") invert(" + invert +"%) sepia(" + sepia + "%) contrast(" + contrast +"%)";
+	document.getElementById("videoCanvas").style.filter="blur(" + gScale_env +"px) saturate(" + saturate +") invert(" + invert +"%) sepia(" + sepia + "%) contrast(" + contrast +"%) grayscale(" + gray_value + "%) brightness(" + brightness + "%)";
 	draw_visualizer()
 }
 

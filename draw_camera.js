@@ -38,25 +38,36 @@ function draw_camera(camera_filter,screen_num){
 	if ((camera_filter!=='contrast')&&(camera_filter!=='freeze')){
 		contrast = 100;
 	}
+	if ((camera_filter!=='gray')&&(camera_filter!=='freeze')){
+		gray_value = 0;
+	}
+	if ((camera_filter!=='brightness')&&(camera_filter!=='freeze')){
+		brightness = 100;
+	}
 	switch (camera_filter){
 		case 'clear':
 			document.getElementById("videoCanvas").style.filter='none';
 			draw_interval = setInterval(clear,22);
 			break;
-		case 'gray':
-			draw_interval = setInterval(gray,22);
-			break;
+		//case 'gray':
+		//	draw_interval = setInterval(gray,22);
+		//	break;
 		case 'threshold':
 			draw_interval = setInterval(threshold,22);
 			break;
 		case 'brightness':
-			draw_interval = setInterval(brightness,22);
+			draw_interval = setInterval(clear,22);
+			brightness=200;
 			break;
 		case 'sharpen':
 			draw_interval = setInterval(sharpen,22);
 			break;
 		case 'sobel':
 			draw_interval = setInterval(sobel,22);
+			break;
+		case 'gray':
+			gray_value = 100;
+			draw_interval = setInterval(clear,22);
 			break;
 		case 'invert':
 			invert = 100;
@@ -139,6 +150,7 @@ function threshold(){
 	idata.data = d;
 	back_videoContext.putImageData(idata,0,0)
 }
+/*
 function gray(){
 	backContext.drawImage(camera,0,0,cw,ch);
 	var idata = backContext.getImageData(0,0,cw,ch);
@@ -166,6 +178,7 @@ function brightness(){
 	idata.data = d;
 	back_videoContext.putImageData(idata,0,0)
 }
+*/
 function embossed(){
 	backContext.drawImage(camera,0,0,cw,ch);
 	var idata = backContext.getImageData(0,0,cw,ch);
